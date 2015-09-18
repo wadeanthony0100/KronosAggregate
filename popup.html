@@ -5,34 +5,65 @@
  value "popup.html".
  -->
 <html>
-  <head>
+<head>
     <title>Timecard Aggregate</title>
     <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        font-size: 100%;
-      }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 400px;
-        height: 400px;
-      }
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+        }
+        .panel-wrap {
+            /* avoid an excessively wide status text */
+            width: 500px;
+            height: 50px;
+            margin: 20px;
+        }
+        #footer {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            font-size: 15pt;
+            text-align: center;
+        }
+        strong {
+            font-size: 13pt;
+        }
+        h2 {
+            margin: 20px;
+        }
     </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
     <script src="popup.js"></script>
-  </head>
-  <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
-  </body>
+</head>
+<body>
+<h2>Timecard Aggregate</h2>
+<div class="panel-wrap">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Time Clocked</h3>
+        </div>
+        <div class="panel-body">
+            You have worked a total of <strong id="hours"></strong> hours and <strong id="minutes"></strong> minutes this pay period.
+        </div>
+    </div>
+</div>
+<br>
+<div class="panel-wrap">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">Wages</h3>
+        </div>
+        <div class="panel-body">
+            That's <strong>$</strong><strong id="money"></strong> before taxes!
+        </div>
+    </div>
+</div>
+<br>
+<div id="footer">
+    <a href="http://www.wademauger.com" target="_blank">wademauger.com</a>
+</div>
+</body>
 </html>
 

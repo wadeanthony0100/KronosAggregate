@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
+  "name": "Timecard Aggregate",
   "description": "Aggregate the hours and wages among all jobs from the current Timecard pay period",
   "version": "1.0",
 
