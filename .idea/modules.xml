@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documents/GitHub/TimecardAggregate/.idea/TimecardAggregate.iml" filepath="$USER_HOME$/Documents/GitHub/TimecardAggregate/.idea/TimecardAggregate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KronosAggregateReal.iml" filepath="$PROJECT_DIR$/.idea/KronosAggregateReal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TimecardAggregate/.idea/TimecardAggregate.iml" filepath="$PROJECT_DIR$/../TimecardAggregate/.idea/TimecardAggregate.iml" />
     </modules>
   </component>
 </project>
