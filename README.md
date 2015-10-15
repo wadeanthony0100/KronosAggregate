@@ -1,6 +1,6 @@
 # KronosAggregate
 
-##NOTE: this project has been moved to another repo, (https://github.com/wadeanthony0100/KronosAggregate-2.0 "KronosAggregate-2.0")
+##NOTE: this project has been moved to another repo, [KronosAggregate-2.0](https://github.com/wadeanthony0100/KronosAggregate-2.0 "KronosAggregate-2.0")
 
 Find the aggregate number of hours you have worked this pay period.
 
